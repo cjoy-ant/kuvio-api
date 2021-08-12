@@ -6,5 +6,6 @@ CREATE TABLE kuvio_employees (
   emp_country TEXT NOT NULL,
   emp_dob TEXT NOT NULL,
   emp_age TEXT NOT NULL,
+  emp_projects TEXT [],
   emp_date_modified TIMESTAMPTZ DEFAULT NOW()
 );
