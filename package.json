@@ -25,7 +25,8 @@
     "morgan": "^1.10.0",
     "pg": "^8.7.1",
     "postgrator-cli": "^4.0.0",
-    "winston": "^3.3.3"
+    "winston": "^3.3.3",
+    "xss": "^1.0.9"
   },
   "devDependencies": {
     "chai": "^4.3.4",
