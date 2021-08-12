@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS kuvio_project_assignments

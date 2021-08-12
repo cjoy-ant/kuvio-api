@@ -8,7 +8,10 @@
     "test": "mocha --require test/setup.js",
     "dev": "nodemon src/server.js",
     "predeploy": "npm audit",
-    "deploy": "git push heroku master"
+    "deploy": "git push heroku master",
+    "migrate": "postgrator --config postgrator-config.js",
+    "migrate:test": "env NODE_ENV=test npm run migrate",
+    "migrate:production": "heroku run npm run migrate"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +21,10 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^4.4.1",
+    "knex": "^0.21.21",
     "morgan": "^1.10.0",
+    "pg": "^8.7.1",
+    "postgrator-cli": "^4.0.0",
     "winston": "^3.3.3"
   },
   "devDependencies": {
