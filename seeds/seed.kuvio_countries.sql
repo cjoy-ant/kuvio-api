@@ -1,4 +1,4 @@
-INSERT INTO kuvio_countries (country_code, country_code3, country_namecountry_number, )
+INSERT INTO kuvio_countries (code, code3, country_name, country_number)
 VALUES
   ('AF', 'AFG', 'Afghanistan', '004'),
 	('AL', 'ALB', 'Albania', '008'),
