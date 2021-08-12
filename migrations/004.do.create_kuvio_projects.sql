@@ -1,5 +1,5 @@
 CREATE TABLE kuvio_projects (
-  project_id UUID PRIMARY KEY DEFAULT uuic_generate_v1mc(),
+  project_id UUID PRIMARY KEY DEFAULT uuid_generate_v1mc(),
   project_title TEXT NOT NULL,
   project_description TEXT NOT NULL,
   project_customer UUID
