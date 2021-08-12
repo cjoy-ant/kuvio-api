@@ -5,7 +5,7 @@ CREATE TABLE kuvio_employees (
   last_name TEXT NOT NULL,
   country VARCHAR(3)
     REFERENCES kuvio_countries(code3) ON DELETE CASCADE NOT NULL,
-  dob TEXT NOT NULL,
+  dob DATE NOT NULL,
   age TEXT NOT NULL,
   date_modified TIMESTAMPTZ DEFAULT NOW()
 );

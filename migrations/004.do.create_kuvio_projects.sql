@@ -4,8 +4,7 @@ CREATE TABLE kuvio_projects (
   project_description TEXT NOT NULL,
   customer UUID
     REFERENCES kuvio_customers(customer_id) ON DELETE CASCADE NOT NULL,
-  deadline TEXT NOT NULL,
-  assigned_employees TEXT [],
+  deadline DATE NOT NULL,
   complete BOOLEAN DEFAULT false,
   date_modified TIMESTAMPTZ DEFAULT NOW()
 );
