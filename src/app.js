@@ -6,6 +6,7 @@ const cors = require("cors");
 const { NODE_ENV } = require("./config");
 const errorHandler = require("./error-handler");
 const employeesRouter = require("./employees/employees-router");
+const customersRouter = require("./customers/customers-router");
 
 const app = express();
 
@@ -16,6 +17,7 @@ app.use(helmet());
 app.use(cors());
 
 app.use("/api/employees", employeesRouter);
+app.use("/api/customers", employeesRouter);
 
 app.use(errorHandler);
 
