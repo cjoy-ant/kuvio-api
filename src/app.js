@@ -17,7 +17,7 @@ app.use(helmet());
 app.use(cors());
 
 app.use("/api/employees", employeesRouter);
-app.use("/api/customers", employeesRouter);
+app.use("/api/customers", customersRouter);
 
 app.use(errorHandler);
 
