@@ -8,6 +8,7 @@ const errorHandler = require("./error-handler");
 const employeesRouter = require("./employees/employees-router");
 const customersRouter = require("./customers/customers-router");
 const projectsRouter = require("./projects/projects-router");
+const assignmentsRouter = require("./assignments/assignments-router");
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.use(cors());
 app.use("/api/employees", employeesRouter);
 app.use("/api/customers", customersRouter);
 app.use("/api/projects", projectsRouter);
+app.use("/api/assignments", assignmentsRouter);
 
 app.use(errorHandler);
 
