@@ -7,6 +7,7 @@ const { NODE_ENV } = require("./config");
 const errorHandler = require("./error-handler");
 const employeesRouter = require("./employees/employees-router");
 const customersRouter = require("./customers/customers-router");
+const projectsRouter = require("./projects/projects-router");
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.use(cors());
 
 app.use("/api/employees", employeesRouter);
 app.use("/api/customers", customersRouter);
+app.use("/api/projects", projectsRouter);
 
 app.use(errorHandler);
 
