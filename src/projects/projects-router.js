@@ -9,7 +9,7 @@ const jsonParser = express.json();
 const serializeProject = (i) => ({
   project_id: i.project_id,
   title: xss(i.title),
-  project_description: xss(i.project_desecription),
+  project_description: xss(i.project_description),
   customer: i.customer,
   deadline: i.deadline,
   complete: i.complete,

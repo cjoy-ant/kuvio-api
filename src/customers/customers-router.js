@@ -9,8 +9,8 @@ const jsonParser = express.json();
 const serializeCustomer = (i) => ({
   customer_id: i.customer_id,
   customer_name: xss(i.customer_name),
-  phone: xss(i.customer_phone),
-  email: xss(i.customer_email),
+  phone: xss(i.phone),
+  email: xss(i.email),
   date_modified: i.date_modified,
 });
 
