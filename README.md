@@ -95,6 +95,10 @@ This app is a sample project for the Kuvio Creative JR Developer Apprenticeship.
 
 ### Pending Features
 
-ADD / EDIT / DELETE customers, projects, and project assignments
+#### ADD / EDIT / DELETE customers, projects, and project assignments
 
-The API has been developed to respond to these endpoints, but features have not yet been implemented on the client-side.
+- The API has been developed to respond to these endpoints, but features have not yet been implemented on the client-side.
+
+#### Complete testing of all components and endpoints
+
+- Due to time contraints, this app has not been fully tested
