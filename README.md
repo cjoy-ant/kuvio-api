@@ -1,26 +1,100 @@
-# Express Boilerplate!
+# Kuvio Sample Project
 
-This is a boilerplate project used for starting new projects!
+## About the App
 
-## Setup
+![Home Page](src/images/app-screenshots/home.png)
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+This app is a sample project for the Kuvio Creative JR Developer Apprenticeship.
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECT-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Enviornment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate"`
+---
 
-## Scripts
+## Features
 
-Start the application `npm start`
+### Employee Directory
 
-Start nodemon for the application `npm run dev`
+- Displays a list of employees
+- Search for employees (alphabetically, by name, by country)
+- Add new employees
+- Edit current employee information
+- Database stores employee information, including Employee id, First name, Last name, Country, Date of birth, and Age
 
-Run the tests `npm test`
+![Employee Directory](src/images/app-screenshots/employee-directory.png)
 
-## Deploying
+### Projects
 
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's main branch.
+- Displays a list of projects including Title, Description, Customer information, Deadline, and Assigned Employees
+- Database stores information for customers, projects, and project assignments in respective tables
+
+![Projects](src/images/app-screenshots/project-list.png)
+
+---
+
+## [API Documentation](https://kuvio-api.herokuapp.com/api)
+
+### Endpoints
+
+#### /employees
+
+- GET: returns all employees
+- POST: add an employee
+
+#### /employees/:emp_id
+
+- GET: return a specified employee
+- PATCH: update information for a specified employee
+- DELETE: delete a specified employee
+
+#### /customers
+
+- GET: returns all customers
+- POST: add a customer
+
+#### /customers/:customer_id
+
+- GET: return a specified customer
+- PATCH: update information for a specified customer
+- DELETE: delete a specified customer
+
+#### /projects
+
+- GET: returns all projects
+- POST: add a project
+
+#### /projects/:project_id
+
+- GET: return a specified project
+- PATCH: update information for a specified project
+- DELETE: delete a specified project
+
+#### /assignments
+
+- GET: returns all project assignments
+- POST: add a project assignment
+
+#### /assignments/:assignment_id
+
+- GET: return a specified project assignment
+- PATCH: update information for a specified project assignment
+- DELETE: delete a specified project assignment
+
+---
+
+### Technology
+
+- HTML
+- CSS
+- JavaScript
+- ReactJS
+- NodeJS
+- Express
+- PostgreSQL
+- Vercel
+- Heroku
+
+---
+
+### Pending Features
+
+ADD / EDIT / DELETE customers, projects, and project assignments
+
+The API has been developed to respond to these endpoints, but features have not yet been implemented on the client-side.
