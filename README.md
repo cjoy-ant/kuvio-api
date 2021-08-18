@@ -95,6 +95,10 @@ This app is a sample project for the Kuvio Creative JR Developer Apprenticeship.
 
 ### Pending Features
 
+#### Error Boundary
+
+- Ideally, error boundaries would have been implemented throughout the app to inform the user of any UI or server errors; however due to time constraints, this was not included.
+
 #### ADD / EDIT / DELETE customers, projects, and project assignments
 
 - The API has been developed to respond to these endpoints, but features have not yet been implemented on the client-side.
